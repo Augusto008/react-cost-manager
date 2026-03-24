@@ -15,10 +15,10 @@ function Navbar() {
             <Link to='/'>Home</Link>
           </li>
           <li className={styles.item}>
-            <Link to='/Projects'>Projects</Link>
+            <Link to='/newproject'>New Project</Link>
           </li>
           <li className={styles.item}>
-            <Link to='/newproject'>New Project</Link>
+            <Link to='/Projects'>Projects</Link>
           </li>
           <li className={styles.item}>
             <Link to='/company'>Company</Link>
