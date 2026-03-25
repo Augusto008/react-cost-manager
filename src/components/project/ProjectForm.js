@@ -7,11 +7,16 @@ function ProjectForm() {
       <div>
         <input type="number" placeholder="Enter the total project budget" />
       </div>
-      <select name="category_id">
-        <option disabled selected>
-          Select the category
-        </option>
-      </select>
+      <div>
+        <select name="category_id">
+          <option disabled selected>
+            Select the category
+          </option>
+        </select>
+      </div>
+      <div>
+        <input type="submit" value="Create Project" />
+      </div>
     </form>
   )
 }
