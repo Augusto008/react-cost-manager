@@ -3,7 +3,7 @@ import Select from '../form/Select';
 import SubmitButton from '../form/SubmitButton';
 import styles from './ProjectForm.module.css';
 
-function ProjectForm() {
+function ProjectForm({ btnText }) {
   return (
     <form className={styles.form}>
       <Input 
@@ -20,7 +20,7 @@ function ProjectForm() {
         name='category_id'
         text='Select the category' />
       <SubmitButton 
-        btnText='Create Project' />
+        text={btnText} />
     </form>
   )
 }

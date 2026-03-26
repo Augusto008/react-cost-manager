@@ -1,9 +1,9 @@
 import styles from './SubmitButton.module.css';
 
-function SubmitButton({ btnText }) {
+function SubmitButton({ text }) {
   return (
     <div>
-      <button className={styles.btn}>{btnText}</button>
+      <button className={styles.btn}>{text}</button>
     </div>
   )
 }
