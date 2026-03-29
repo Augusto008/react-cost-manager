@@ -10,6 +10,17 @@
       "cost": 0,
       "services": [],
       "id": "YAAWJGOXDmw"
+    },
+    {
+      "name": "Testing Message",
+      "budget": "5000",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": "HqEizsu9L2E"
     }
   ],
   "categories": [
