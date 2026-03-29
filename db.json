@@ -1,29 +1,42 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "name": "Project Test",
+      "budget": "32000",
+      "category": {
+        "id": "6",
+        "name": "Other"
+      },
+      "cost": 0,
+      "services": [],
+      "id": "YAAWJGOXDmw"
+    }
+  ],
   "categories": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Infra"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Development"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Design"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Marketing"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Planning"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Other"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
