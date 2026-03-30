@@ -16,7 +16,7 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
         'Content-Type': 'application/json',
       },
     })
-      .then(response => response.json())
+      .then(resp => resp.json())
       .then(data => setCategories(data))
       .catch(error => console.error('Error fetching categories:', error));
   }, []);
