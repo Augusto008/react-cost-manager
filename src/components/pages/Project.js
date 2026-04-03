@@ -32,6 +32,8 @@ function Project() {
   }, {id});
 
   function editPost(project) {
+    setMessage('');
+
     if (project.budget < project.cost) {
       setMessage('Budget cannot be less than the total cost of the project.');
       setType('error');
