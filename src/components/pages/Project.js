@@ -12,6 +12,7 @@ function Project() {
 
   const [project, setProject] = useState([]);
   const [showProjectForm, setShowProjectForm] = useState(false);
+  const [showServiceForm, setShowServiceForm] = useState(false);
   const [message, setMessage] = useState();
   const [type, setType] = useState();
 
@@ -58,9 +59,12 @@ function Project() {
     });
   }
 
-
   function toggleProjectForm() {
     setShowProjectForm(!showProjectForm);
+  }
+
+  function toggleServiceForm() {
+    setShowServiceForm(!showServiceForm);
   }
 
   return (
@@ -74,8 +78,6 @@ function Project() {
               <button className={styles.btn} onClick={toggleProjectForm}>
                 {!showProjectForm ? 'Edit Project' : 'Close'}
               </button>
-            </div>
-            <div>
               {!showProjectForm ? (
                 <div className={styles.project_info}>
                   <p>
@@ -89,7 +91,7 @@ function Project() {
                   </p> 
                 </div>
               ) : (
-                <div>
+                <div className={styles.project_info}>
                   <ProjectForm 
                     handleSubmit={editPost} 
                     btnText="Update Project" 
@@ -97,6 +99,19 @@ function Project() {
                 </div>
               )}
             </div>
+            <div className={styles.service_form_container}>
+              <h2>Add a service:</h2>
+              <button className={styles.btn} onClick={toggleServiceForm}>
+                {!showServiceForm ? 'Add Service' : 'Close'}
+              </button>
+              <div className={styles.project_info}>
+                {showServiceForm && <p>Service form will go here</p>}
+              </div>
+            </div>
+            <h2>Services</h2>
+            <Container customClass="start">
+              <p>List of services will go here</p>
+            </Container>
           </Container>
         </div>
       ): (
