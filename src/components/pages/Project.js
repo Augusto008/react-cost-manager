@@ -73,28 +73,28 @@ function Project() {
               <button className={styles.btn} onClick={toggleProjectForm}>
                 {!showProjectForm ? 'Edit Project' : 'Close'}
               </button>
-              <div>
-                {!showProjectForm ? (
-                  <div className={styles.project_info}>
-                    <p>
-                      <span>Category: </span> {project.category.name}
-                    </p> 
-                    <p>
-                      <span>Budget: </span> {project.budget}
-                    </p> 
-                    <p>
-                      <span>Total Used:</span> {project.cost}
-                    </p> 
-                  </div>
-                ) : (
-                  <div>
-                    <ProjectForm 
-                      handleSubmit={editPost} 
-                      btnText="Update Project" 
-                      projectData={project} />
-                  </div>
-                )}
-              </div>
+            </div>
+            <div>
+              {!showProjectForm ? (
+                <div className={styles.project_info}>
+                  <p>
+                    <span>Category: </span> {project.category.name}
+                  </p> 
+                  <p>
+                    <span>Budget: </span> {project.budget}
+                  </p> 
+                  <p>
+                    <span>Total Used:</span> {project.cost}
+                  </p> 
+                </div>
+              ) : (
+                <div>
+                  <ProjectForm 
+                    handleSubmit={editPost} 
+                    btnText="Update Project" 
+                    projectData={project} />
+                </div>
+              )}
             </div>
           </Container>
         </div>
