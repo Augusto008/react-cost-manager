@@ -9,7 +9,6 @@ import Message from '../layout/Message';
 function Project() {
 
   const { id } = useParams();
-  console.log(id);
 
   const [project, setProject] = useState([]);
   const [showProjectForm, setShowProjectForm] = useState(false);
