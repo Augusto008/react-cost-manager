@@ -30,7 +30,7 @@ function Project() {
     .catch(error => {
       console.error('Error fetching project:', error);
     });
-  }, {id});
+  }, [id]);
 
   function editPost(project) {
     setMessage('');
