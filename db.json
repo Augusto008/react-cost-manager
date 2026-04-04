@@ -13,13 +13,20 @@
     },
     {
       "name": "Testing Message",
-      "budget": "6000",
+      "budget": "8000",
       "category": {
         "id": "3",
         "name": "Design"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 2000,
+      "services": [
+        {
+          "name": "Test",
+          "cost": "2000",
+          "description": "Test Service",
+          "id": "4b307ae4-21d9-4e12-9926-c6a23f07b8a1"
+        }
+      ],
       "id": "HqEizsu9L2E"
     }
   ],
